@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.ir_so {overflow: hidden; position: absolute; width: 0; height: 0; line-height: 0; text-indent:-9999px;}
+		a {color: #222; text-decoration: none; }
+		a:hover {color: #390; text-decoration: underline;}
+		*{margin: 0; padding: 0;}
+		#wrap {width: 1200px; margin: 0 auto; overflow: hidden;}
+
+		.left {float: left; width: 50%; height: 250px; position: relative; border-right: 	1px solid #ccc; }
+		.left h2 {font-size: 25px;padding: 40px 25px 25px 25px;margin-left: 20px; }
+		.left ul {list-style: none;}
+		.left li {overflow: hidden; padding-left: 30px; margin-left: 15px; margin-bottom: 8px;	 font-size: 17px;}
+		.left li a {float: left; width: 60%; 	overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+		.left li span {float: right; width: 30%; text-align: center;}
+		.left a.more {position: absolute; top: 55px;	right: 40px; display: block; width: 12px;	height: 22px; background: url(img/img8.jpg) no-repeat;	}
+
+
+		.right {float: right; width: 49%; height: 250px;   position: relative; }
+		.right h2 {font-size: 25px; padding: 40px 25px 25px 25px;margin-left: 20px;}
+		.right ul {list-style: none;}
+		.right li {overflow: hidden; padding-left: 30px; margin-left: 10px; margin-bottom: 8px; font-size: 17px;	}
+		.right li a {float: left; width: 60%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+		.right li span {float: right; width: 30%;	  text-align: center;}
+		.right li img {float: left; padding: 2px;}
+		.right a.more {position: absolute; top: 55px;	right: 40px; display: block; width: 12px;	height: 22px; background: url(img/img8.jpg) no-repeat;}
+
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<div class="left">
+			<h2>TOAST Meetup!</h2>
+			<ul>
+				<li><a href="#">[Android] Unit Testing Framework</a><span>2019.06.04</span></li>
+				<li><a href="#">[Kotlin]메모리릭 방지하기2222222</a><span>2019.06.04</span></li>
+				<li><a href="#">[Java}integer.valueOf(127)==integer.value</a><span>2019.06.04</span></li>
+				<li><a href="#">테스트 코드 작성이 힘든 이유와 테스트 가능 코드</a><span>2019.06.04</span></li>
+			</ul>
+			<a href="#" class="more ir_so" title="더보기">더보기</a>
+		</div>
+		<div class="right">
+			<h2>서비스 공지</h2>
+			<ul>
+				<li><a href="#"><img src="img/bnt1.jpg" alt="">보안동향공지 MySQL을 이용한 랜섬웨어</a><span>2019.06.04</span></li>
+				<li><a href="#"><img src="img/bnt1.jpg" alt="">자바스크립트 OOP꼭꼭 씹어 먹기</a><span>2019.06.04</span></li>
+				<li><a href="#"><img src="img/bnt2.jpg" alt="">Compute Network 점검 안내</a><span>2019.06.04</span></li>
+				<li><a href="#"><img src="img/bnt1.jpg" alt="">Key Manager 신규 출시 및 u2 instance정책</a><span>2019.06.04</span></li>
+			</ul>
+			<a href="#" class="more ir_so" title="더보기">더보기</a>
+		</div>
+	</div>
+	
+</body>
+</html>

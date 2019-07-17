@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>한화 레이아웃</title>
+	<style>
+		*{margin: 0; padding: 0;}
+		#wrap {width: 100%;}
+		#header {}
+		#header1 {width: 100%; height: 120px; background-color: #666;}
+		#header2 {width: 100%; height: 551px;background-color: #555;}
+		#contents {width: 100%; background-color: #888;}
+		#contents1 {width: 100%; height: 823px; background-color: #444; }
+		#contents2 {width: 100%; height: 435px; background-color: #111;}
+		#contents3 {width: 100%; height: 603px; background-color: #444;}
+		#footer {width: 100%; background-color: #777;}
+		#footer1 {width: 100%; height: 394px; background-color: #333;}
+		#footer2 {width: 100%; height: 93px; background-color: #222;}
+
+		.container {width: 1300px; height: inherit; background-color: rgba(0,0,0,0.5); margin: 0 auto;}
+
+
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<div id="header">
+			<div id="header1">
+				<div class="container"></div>
+			</div>
+			<div id="header2">
+				<div class="container"></div>
+			</div>
+		</div>
+		<div id="contents">
+			<div id="contents1">
+				<div class="container"></div>
+			</div>
+			<div id="contents2"></div>
+			<div id="contents3">
+				<div class="container"></div>
+			</div>
+		</div>
+		<div id="footer">
+			<div id="footer1">
+				<div class="container"></div>
+			</div>
+			<div id="footer2">
+				<div class="container"></div>
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>
