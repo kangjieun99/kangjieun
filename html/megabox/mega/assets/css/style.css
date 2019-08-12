@@ -9,7 +9,7 @@
 #opening {  background: url(../img/open_bg.jpg) no-repeat center center fixed; background-size: cover; }
 #new {}
 #help {}
-#footer {height: 1000px; background: #ccc;}
+#footer {	 background: #222; padding: 80px 0;	}
 
 /* container */
 .container {position: relative; width: 1280px; margin: 0 auto; /*background: rgba(0,0,0,0.4);*/ }
@@ -38,7 +38,7 @@
 .header .menu {float: right;}
 .header .menu ul {border-left: 1px solid #ccc;}
 .header .menu li {float: left; width: 104px; text-align: center; border-right: 1px solid #ccc;}
-.header .menu li a {display: block; padding: 20px 10px 19px; font-size: 18px; color: 333px;}
+.header .menu li a {display: block; padding: 20px 10px 19px; font-size: 18px; color: #333;}
 .header .menu li a:hover {background: #f1f1f1; color: #000;}
 /* slider */
 .slider {}
@@ -112,18 +112,18 @@ cursor: pointer;}
 .new .new_left .play svg{}
 .new .new_left .play svg .st0 {fill: rgba(255,255,255,0.3); stroke: #fff; stroke-width:2; }
 .new .new_left .play svg .st1 {fill:#fff;}
-.new .new_right {position: absolute; top: 160px;	right: 0;  width: 392px; height: 565px; }
+.new .new_right {position: absolute; top: 155px;	right: 0;  width: 392px; height: 565px; }
 
 /* help */
-.help {}
+.help {padding-bottom: 80px;	}
 .help h3 {font-size: 36px; font-weight: 700; margin-bottom:  20px;}
 .help .help_box1 {float: left; width: 32%; margin-right: 2%;}
 .help .help_box2 {float: left; width: 32%; margin-right: 2%;}
 .help .help_box3 {float: left; width: 32%; margin-right: 0%;}
 
 .help .help_box1 .notice { border: 1px solid #ccc; height: 320px;	}
-.help .help_box2 .card { border: 1px solid #ccc; height: 300px;	}
-.help .help_box3 .service { border: 1px solid #ccc; height: 300px;	}
+.help .help_box2 .card { border: 1px solid #ccc; height: 320px;	}
+.help .help_box3 .service { border: 1px solid #ccc; height: 360px;	}
 
 /*notice*/
 .notice {position: relative;  padding:20px; }
@@ -140,7 +140,57 @@ padding: 14px 0; border-bottom: 1px solid #ccc;	}
 .notice ul li ul li  dt em {  color: #333; padding-left: 	7px;}
 .notice ul li ul li  dd {color: #666;  overflow: hidden; white-space: nowrap; text-overflow: ellipsis; padding-top: 3px;	 }
 
+/* card */
+.card {padding: 20px;	}
+.card > div {position: relative; border: 1px solid #ccc; height: 90px;	margin-bottom: 20px;	}
+.card > div img{width: 100px;	position: absolute; left: 15px; top: 13px;	}
+.card > div h4{padding: 10px 0 0 130px;	font-size: 18px;	color: #333; font-weight: bold;}
+.card > div p{padding: 0 12px 0 130px;	color: #666; font-size: 14px;}
 
+/* service */
+.service ul { overflow: hidden;}
+.service li { float: left; width: 50%;	 height: 180px; box-sizing: border-box; 
+text-align: center; color: #666; }
+.service li:nth-child(1) {background: url(../img/service01.jpg) no-repeat center center; background-size: 100px; 
+	border-right: 1px solid #ccc; border-bottom: 1px solid #ccc; }
+.service li:nth-child(2) {background: url(../img/service02.jpg) no-repeat center center; background-size: 100px;
+	border-bottom: 1px solid #ccc;}
+.service li:nth-child(3) {background: url(../img/service03.jpg) no-repeat center center; background-size: 100px;
+	border-right: 1px solid #ccc;}
+.service li:nth-child(4) {background: url(../img/service04.jpg) no-repeat center center; background-size: 100px;}
+.service li a {font-size: 18px;	 padding-top: 140px; display: block;}
+
+/* footer_info */
+.footer_info {}
+.footer_info h2 {padding-bottom: 30px;}
+.footer_info h2 img {width: 200px;}
+.footer_info ul {padding: 15px 0 20px;}
+.footer_info li {position: relative; display: inline; padding-right: 16px; padding-left: 8px;}
+.footer_info li:after {content: ''; width: 1px; height: 12px; background: #8f8f8f;
+position: absolute; right: 0; top: 4px;}
+.footer_info li:first-child {padding-left: 0;}
+.footer_info li:last-child:after {width: 0; height: 0;}
+.footer_info li a {color: #8f8f8f; font-size: 14px;}
+.footer_info address {color: #8f8f8f;}
+.footer_info address p {padding-bottom: 15px; font-size: 14px;}
+
+/* footer_sns */
+.footer_sns {position: absolute; right: 28px; top: 0; z-index: 100;}
+.footer_sns li {width: 36px; height: 36px; display: inline-block; 
+   background: url(../img/icon01.png) no-repeat; background-size: 78px; margin-left: 3px;}
+.footer_sns li.s1 {background-position: -41px 0;}
+.footer_sns li.s2 {background-position: -41px -41px;}
+.footer_sns li.s3 {background-position: -41px -81px;}
+.footer_sns li.s4 {background-position: -41px -122px;}
+.footer_sns li.s5 {background-position: -41px -163px;}
+.footer_sns li.s1:hover {background-position: 0px 0;}
+.footer_sns li.s2:hover {background-position: 0px -41px;}
+.footer_sns li.s3:hover {background-position: 0px -81px;}
+.footer_sns li.s4:hover {background-position: 0px -122px;}
+.footer_sns li.s5:hover {background-position: 0px -163px;}
+.footer_sns .tel {text-align: right; padding-top: 5px;}
+.footer_sns .tel a {color: #8f8f8f; font-size: 21px;}
+.footer_sns .tel a em {color: #fff;}
 
 
 /* Mediaquery */
@@ -153,6 +203,24 @@ padding: 14px 0; border-bottom: 1px solid #ccc;	}
 	.header .logo .lo2 {display: none;}
 	.header .logo .lo1 {margin:12px 15px 9px 0;}
 }
+@media (max-width: 1024px){
+	.help .help_box1 {float: left; width: 49%; margin-right: 2%;}
+	.help .help_box2 {float: left; width: 49%; margin-right: 0%;}
+	.help .help_box3 {float: left; width: 100%; margin-right: 0%; margin-top: 2%;}
+	.help .help_box3 h3 {display: none;}
+
+	.service li {width: 25%; height: 	auto; }
+	.help .help_box3 .service {height: 	auto;}
+	.service li:nth-child(1) {border: 	0; background: url(../img/service01.jpg)no-repeat top 20px center / 80px;} 
+	.service li:nth-child(2) { border-bottom: 	0; background: url(../img/service02.jpg)no-repeat top 20px center / 80px;}
+	.service li:nth-child(3) {border:0; background: url(../img/service03.jpg)no-repeat top 20px center / 80px;}
+	.service li:nth-child(4) {background: url(../img/service04.jpg)no-repeat top 20px center / 80px;}
+	.service li a {padding-top: 100px;	padding-bottom: 20px;	}
+}
+
+
+
+
 @media (max-width: 900px){
 	#movie {background: #d9d7e0; padding: 16px;}
 	#movie .row {background: #fff; padding: 32px;	 }
@@ -186,6 +254,23 @@ padding: 14px 0; border-bottom: 1px solid #ccc;	}
 	.new .new_left .play {width: 80px;	 height: 80px;	}
 	.new .new_right {display: none;}
 
+
+	#help {padding: 0 16px 16px 16px; background: #d9d7e0;}
+	#help .row {background: #fff; padding: 32px;}
+	.help h3 {font-size: 18px;	 }
+	.help{padding-bottom: 0;	}
+	.help .help_box3 h3 {display: block;	}
+	.help .help_box1 { width: 100%; margin-right: 0%;}
+	.help .help_box2 { width: 100%; margin-right: 2%;}
+	.help .help_box3 {width: 100%;	 margin-top: 2%;	}
+
+	#footer {padding: 0;}
+   .footer_sns {position: static; text-align: center; background: #352c2c; padding-bottom: 15px;}
+   .footer_sns .tel {display: none;}
+   .footer_info {text-align: center; padding: 5% 0;}
+   .footer_info h2 img {margin: 0 auto;}
+   .footer_info li {white-space: nowrap;}
+   .footer_info address br {display: none;}
 }
 
 
@@ -208,6 +293,21 @@ padding: 14px 0; border-bottom: 1px solid #ccc;	}
 
 	#new {padding: 8px;}
 	#new .row {padding: 16px;}
+
+	#help {padding: 0 8px 8px 8px;}
+	#help .row {padding: 16px;}
+	.help h3{padding-top: 20px;	}
+	.help > article:nth-child(1) h3 {padding-top: 0px;	}
+
+	.service li:nth-child(1) {border: 	0; background: url(../img/service01.jpg)no-repeat top 20px center / 60px;} 
+	.service li:nth-child(2) { border-bottom: 	0; background: url(../img/service02.jpg)no-repeat top 20px center / 60px;}
+	.service li:nth-child(3) {border:0; background: url(../img/service03.jpg)no-repeat top 20px center / 60px;}
+	.service li:nth-child(4) {background: url(../img/service04.jpg)no-repeat top 20px center / 60px;}
+	.service li a {font-size: 14px; padding-top: 80px;}
+
+
+
+
 }
 
 
