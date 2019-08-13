@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		// var box;
+		// box = 100;
+
+		// alert(box);
+		// document.write(box);
+		// console.log(box); 
+		var x = 1000; //(전역)변수 x에 숫자 1000을 저장
+		var y = 2000; //(전역)변수 y에 숫자 2000을 저장
+
+		x =400; // 변수 x에 숫자를 1000에서 400으로 변경
+
+		function func(){
+			var x; //(지역)변수 x를 선언
+			var y = 4000; //(지역)변수 y에 숫자 4000을 저장
+
+			x = 100; //(지역)변수x에 숫자 100을 저장
+			y = 300;  //(지역)변수 y의 숫자 300을 변경하고 저장
+			z = 500; //(전역)변수 z에 숫자 500을 저장
+
+			document.write("함수 안<br>");
+			document.write(x);
+			document.write("<br>");
+			document.write(y);
+			document.write("<br>");
+			document.write(z);
+		}
+		func();//실행함수가 있어야 작동가능
+
+			
+			document.write("<br>함수 밖<br>");
+			document.write(x);
+			document.write("<br>");
+			document.write(y);
+			document.write("<br>");
+	</script>
+</head>
+<body>
+</body>
+</html>
