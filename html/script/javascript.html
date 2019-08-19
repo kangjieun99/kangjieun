@@ -573,6 +573,13 @@
 		document.write(arr4.length);
 		document.write("&lt;br&gt;&lt;br&gt;");
 
+		//배열 가져오기
+		var arr5 = [100,200,300,400,500];
+
+		for(var i=0; i&lt;arr5.length; i++){
+			document.write(arr5[i], "&lt;br&gt;");
+		}
+
 		//배열의 합 구하기
 		var arr5 = [100,200,300,400,500];
 		var sum = 0;
@@ -1076,42 +1083,297 @@
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
-					<h3 id="intro5_6" class="page-header">연산자 우선순위</h3>
+					<h3 id="intro5_6" class="page-header">문자 결합 연산자</h3>
+					<h4>문자 결합 연산자<a href="javascript13.html" target="_blank"><span class="badge">View</span></a></h4>
+<pre class="line-numbers language-markup"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+	&lt;meta charset="UTF-8"&gt;
+	&lt;title&gt;문자결합 연산자&lt;/title&gt;
+	&lt;script&gt;
+		var x1 = 100; //숫자 (number)
+		var x2 = "javascript"; //문자(string)
+		var x3 = "100"; //문자(string)
+		var x4 = "200"; //문자(string)
+
+		document.write("&lt;br&gt;"); 
+		document.write(typeof(x1)); 
+		document.write("&lt;br&gt;"); 
+		document.write(x1 + 100);  //숫자 + 숫자
+		document.write("&lt;br&gt;"); 
+		document.write(x1 + x2);  //숫자 + 문자
+		document.write("&lt;br&gt;"); 
+		document.write(x3 + x4);  //문자 + 문자 
+		document.write("&lt;br&gt;"); 
+		document.write(x1+ true);  //숫자 + 불린 
+		document.write("&lt;br&gt;"); 
+		document.write(x1+ null);  //숫자 + 특수값
+		document.write("&lt;br&gt;"); 
+		document.write(true+ true);  //불린 + 불린
+		document.write("&lt;br&gt;"); 
+		document.write(null+ true);  //특수값 + 불린
+		document.write("&lt;br&gt;"); 
+		document.write(true+ false);  //불린 + 불린
+
+		x1 = "" + x1; //숫자를 문자열로 형 변환
+		document.write(x1); 
+		document.write("&lt;br&gt;"); 
+		document.write(typeof(x1)); 
+
+	&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;	
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+					<h3 id="intro5_7" class="page-header">연산자 우선순위</h3>
 					<div class="table-responsive">
 					<table class="table table table-striped table table-bordered table-hover">
-						<caption>증감 연산자 표</caption>
+						<caption>연산자 우선순위</caption>
 					<thead>
 							<tr>
-								<td>종류</td>
-								<td>예시</td>
+								<td>우선순위</td>
+								<td>연산자</td>
 								<td>설명</td>
 							</tr>
 					</thead>		
 					<tbody>		
 							<tr>
-								<td><code>++</code></td>
-								<td>x = x + 1</td>
-								<td>x++ 또는 ++x</td> 
+								<td>1</td>
+								<td>괄호/대괄호</td>
+								<td>()[]</td> 
 							</tr>
 							<tr>
-								<td><code>--<code></td>
-								<td>x = x - 1</td>
-								<td>x-- 또는 --x</td> 
+								<td>2</td>
+								<td>단항 연산자</td>
+								<td><code>++</code><code>--</code><code>!</code></td> 
 							</tr>
+							<tr>
+								<td>3</td>
+								<td>곱셈/나눗셈 연산자</td>
+								<td><code>*</code><code>/</code><code>%</code></td> 
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>덧셈/뺄셈 연산자</td>
+								<td><code>+</code><code>-</code></td> 
+							</tr>
+							<tr>
+									<td>5</td>
+									<td>비교 연산자</td>
+									<td><code>&gt;</code>, <code>&gt;=</code>, <code>&lt;</code>, <code>&lt;=</code></td>
+								</tr>
+								<tr>
+									<td>6</td>
+									<td>비교 연산자</td>
+									<td><code>==</code>, <code>===</code>, <code>!=</code>, <code>!==</code></td>
+								</tr>
+								<tr>
+									<td>7</td>
+									<td>논리 곱 연산자</td>
+									<td><code>&&</code></td>
+								</tr>
+								<tr>
+									<td>8</td>
+									<td>논리 합 연산자</td>
+									<td><code>||</code></td>
+								</tr>
+								<tr>
+									<td>9</td>
+									<td>대입 연산자</td>
+									<td><code>=</code>, <code>+=</code>, <code>-=</code>, <code>*=</code>, <code>/=</code>, <code>%=</code></td>
+								</tr>
+								<tr>
+									<td>10</td>
+									<td>쉼표</td>
+									<td><code>,</code></td>
+								</tr>
 					</tbody>
 				</table>
 			</div>
-					<h4>	산술연산자<a href="javascript13.html" target="_blank"><span class="badge">View</span></a></h4>
-<pre class="line-numbers language-markup"><code>
-</code></pre>
-		
+
 					
+				<h3 id="intro5_8" class="page-header">정리</h3>
+				<h4>적정 체중 테스트 만들기<a href="javascript14.html" target="_blank"><span class="badge">View</span></a></h4>
+<pre class="line-numbers language-markup"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+	&lt;meta charset="UTF-8"&gt;
+	&lt;title&gt;적정 체중 구하기&lt;/title&gt;
+	&lt;script&gt;	
+		//적정 체중 = (본인신장 - 100) * 0.9;
+
+		// var userHeight = 160; //키
+		// var userWeight = 43; //몸무게
+		// var normal  = (userHeight - 100) * 0.9;
+
+
+		var name = prompt("당신의 이름은?","");
+		var height = prompt("당신의 키는?", "0");
+		var weight = prompt("당신의 몸무게는?", "0");
+
+		var normal = (height - 100) * 0.9;
+		var result = weight &gt;= normal - 5 && weight &lt;= normal + 5;
+		console.log(result);
+		result = result ? "적정 체중입니다." : "적정 체중이 아닙니다.";
+		document.write(name +"님은 "+ result);
+
+	&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+				<h4>지출비용 초과여부 출력<a href="javascript15.html" target="_blank"><span class="badge">View</span></a></h4>
+				<pre class="line-numbers language-markup"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+	&lt;meta charset="UTF-8"&gt;
+	&lt;title&gt;지출비용 초과여부 출력&lt;/title&gt;
+	&lt;script&gt;
+		// var price1 = 3000;
+		// var price2 = 6000;
+		// var price3 = 3000;
+
+		// var total = price1 + price2 +price3;
+		// var result = total &gt; 10000 ? "초과 되었습니다." : "돈 관리 잘했어요!"
+
+		var price1 = prompt("당신의 교통비는?","0");
+		var price2 = prompt("당신의 식비는?","0");
+		var price3 = prompt("당신의 음료비는?","0");
+
+		price1 = Number(price1);
+		price2 = Number(price2);
+		price3 = Number(price3);
+
+		var total = price1 + price2 +price3;
+
+		console.log(total);
+		var result = total &gt; 10000 ? total - 10000 + "초과 되었습니다." : "돈 관리 잘했어요!";
+
+		document.write(result);
+	&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
 				</div>
 				<!-- //Introduction -->
 				<!-- Introduction -->
 				<div class="bs-docs-section">
 					<h2 id="intro6" class="page-header">조건문</h2>
-					<p class="lead">자바스크립트는</p>
+					<p class="lead">조건문은 조건식에 따라 참(true) 인지, 거짓(false)인지에 따라
+					자바스크립트 코드를 제어하는 제어문입니다.</p>
+
+					<h3 id="intro6_1" class="page-header">if문</h3>
+					<div class="panel panel-default">
+  						<div class="panel-heading">조건문</div>
+  						<div class="panel-body">
+   			 			if(조건식){<br>
+   			 			&nbsp;	//실행코드<br>
+   			 			}
+  						</div>
+					</div>
+
+					<h4>if문<a href="javascript16.html" target="_blank"><span class="badge">View</span></a></h4>
+					<pre class="line-numbers language-markup"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+	&lt;meta charset="UTF-8"&gt;
+	&lt;title&gt;if문&lt;/title&gt;
+	&lt;script&gt;
+var x = 100;	//변수 x에 숫자를 100을 저장
+
+		if(x &gt; 200){	//변수 x가 200보다 크면 실행(true)
+			document.write(x);
+		}
+
+		if(x &lt; 200){	//변수 x가 200보다 작으면 실행(true)
+			document.write(x,"&lt;br&gt;");
+		}
+
+		if(true){	
+			document.write(x,"&lt;br&gt;");
+		}
+
+		if(false){	
+			document.write(x,"&lt;br&gt;");
+		}
+
+		//통화량 구분하기
+		var min = prompt("당신의 하루 통화량은 몇 분인가요?", "0");
+		if(min &gt; 60){
+			document.write("당신은 전화를 많이쓰네요~&lt;br&gt;");
+		}
+
+		//짝수 구분하기
+		var num = prompt("숫자를 입력해 주세요!!&lt;br&gt;", "0");
+
+		if(num % 2 == 0){
+			document.write("당신이 입력한 숫자는 짝수입니다.&lt;br&gt;");
+		}
+
+		//조건식에 논리형 데이터가 아닌 다른 형이 오는 경우
+		//0, null, ""(빈문자), undefined --&gt; true
+		var y = 100;
+
+		if(y){
+			document.write(y,"&lt;br&gt;");
+		}
+
+		var useName = prompt("당신의 이름은 무엇입니다.","");
+		if(useName){
+			document.write(useName + "님 방갑습니다.");
+		}
+		//document.write(useName + "님 방갑습니다.");
+		
+		//if(useName) document.write(useName + "님 방갑습니다.");
+	&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	
+&lt;/body&gt;
+&lt;/html&gt;
+					</code></pre>
+				
+
+
+					<h3 id="intro6_2" class="page-header">if ~ else문</h3>
+					<div class="panel panel-default">
+  						<div class="panel-body">
+   			 			if(조건식){<br>
+   			 			&nbsp;	//참(true)일 떄 실행 코드<br>
+   			 			} else {<br>
+   			 			&nbsp;	//거짓(false)일 때 실행 코드<br>
+   			 			}<br>
+  						</div>
+					</div>
+					<h4>if ~ else문<a href="javascript17.html" target="_blank"><span class="badge">View</span></a></h4>
+					<pre class="line-numbers language-markup"><code>
+					</code></pre>
+
+
+					<h3 id="intro6_3" class="page-header">다중 if문</h3>
+					<div class="panel panel-default">
+  						<div class="panel-body">
+   			 			if(조건식){<br>
+   			 			&nbsp;	//참(true)일 떄 실행 코드 <br>
+   			 			} else if {<br>
+   			 			&nbsp;	//앞 조건이 거짓(false)일 때 실행 코드<br>
+   			 			} else if {<br>
+   			 			&nbsp;	//앞 조건이 거짓(false)일 때 실행 코드<br>
+   			 			} else {<br>
+   			 			&nbsp;	//앞의 모든 조건이 거짓(false)일 때 실행 코드<br>
+   			 			}
+  						</div>
+					</div>
+					<h3 id="intro6_4" class="page-header">switch문</h3>
+					<h3 id="intro6_5" class="page-header">조건부(삼항) 연산자</h3>
 		
 					
 				</div>
@@ -1120,6 +1382,11 @@
 				<div class="bs-docs-section">
 					<h2 id="intro7" class="page-header">반복문</h2>
 					<p class="lead">자바스크립트는</p>
+					<h3 id="intro7_1" class="page-header">while문</h3>
+					<h3 id="intro7_2" class="page-header">do ~ while문</h3>
+					<h3 id="intro7_3" class="page-header">for문</h3>
+					<h3 id="intro7_4" class="page-header">다중 for문</h3>
+					<h3 id="intro7_5" class="page-header">break문 continue문</h3>
 		
 					
 				</div>
@@ -1212,16 +1479,34 @@
 						</li>
 						<li><a href="#intro5">연산자</a>
 							<ul class="nav">
-								<li><a href="#intro5_1">산술연산자</a></li>
-								<li><a href="#intro5_2">복합연산자</a></li>
-								<li><a href="#intro5_3">증감연산자</a></li>
-								<li><a href="#intro5_4">비교연산자</a></li>
-								<li><a href="#intro5_5">논리연산자</a></li>
-								<li><a href="#intro5_6">연산자 우선순위</a></li>
+								<li><a href="#intro5_1">산술 연산자</a></li>
+								<li><a href="#intro5_2">대입 연산자</a></li>
+								<li><a href="#intro5_3">증감 연산자</a></li>
+								<li><a href="#intro5_4">비교 연산자</a></li>
+								<li><a href="#intro5_5">논리 연산자</a></li>
+								<li><a href="#intro5_6">문자열 결합 연산자</a></li>
+								<li><a href="#intro5_7">연산자 우선순위</a></li>
+								<li><a href="#intro5_8">정리</a></li>
 							</ul>
 						</li>
-						<li><a href="#intro6">조건문</a></li>
-						<li><a href="#intro7">반복문</a></li>
+						<li><a href="#intro6">조건문</a>
+							<ul class="nav">
+								<li><a href="#intro6_1">if문</a></li>
+								<li><a href="#intro6_2">if ~ else문</a></li>
+								<li><a href="#intro6_3">다중 if문</a></li>
+								<li><a href="#intro6_4">switch문</a></li>
+								<li><a href="#intro6_5">조건부(삼항) 연산자</a></li>
+							</ul>
+						</li>
+						<li><a href="#intro7">반복문</a>
+							<ul class="nav">
+								<li><a href="#intro7_1">while문</a></li>
+								<li><a href="#intro7_2">do ~ while문</a></li>
+								<li><a href="#intro7_3">for문</a></li>
+								<li><a href="#intro7_4">다중 for문</a></li>
+								<li><a href="#intro7_5">break문 continue문</a></li>
+							</ul>
+						</li>
 						<li><a href="#intro8">함수</a></li>
 						<li><a href="#intro9">객체</a></li>
 						<li><a href="#intro10">내장객체</a></li>
